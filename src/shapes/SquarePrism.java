@@ -17,9 +17,7 @@ public class SquarePrism extends Shape {
     public double getVolume() {
         return getBaseArea() * height;
     }
-
-    @Override
-    public String toString() {
-        return "SquarePrism [volume=" + getVolume() + "]";
+    public String toString(String sortType) {
+        return super.toString(sortType);
     }
 }

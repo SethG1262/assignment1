@@ -10,7 +10,7 @@ public class Cylinder extends Shape {
 
     @Override
     public double getBaseArea() {
-        return Math.PI * Math.pow(radius, 2);
+        return Math.PI * radius * radius;
     }
 
     @Override
@@ -19,8 +19,7 @@ public class Cylinder extends Shape {
     }
 
     @Override
-    public String toString() {
-        return "Cylinder [volume=" + getVolume() +"]";
+    public String toString(String sortType) {
+        return super.toString(sortType);
     }
 }
-	

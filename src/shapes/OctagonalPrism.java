@@ -17,9 +17,7 @@ public class OctagonalPrism extends Shape {
     public double getVolume() {
         return getBaseArea() * height;
     }
-
-    @Override
-    public String toString() {
-        return "OctagonalPrism [volume=" + getVolume() +  "]";
+    public String toString(String sortType) {
+        return super.toString(sortType);
     }
 }

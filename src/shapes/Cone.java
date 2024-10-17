@@ -17,9 +17,8 @@ public class Cone extends Shape {
     public double getVolume() {
         return (1.0 / 3.0) * getBaseArea() * height;
     }
-
-    @Override
-    public String toString() {
-    	return "Cone [volume=" + getVolume() + "]";
+    
+    public String toString(String sortType) {
+        return super.toString(sortType);
     }
 }
